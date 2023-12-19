@@ -5,8 +5,8 @@
 ---
 ## Contingut:
 1. Llibreria [Utilities.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/Utilities.kt)
-2. Llibreria [ConsoleColors.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/ConsoleColors.kt)
-3. [TODOs](#todos)
+3. Llibreria [ConsoleColors.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/ConsoleColors.kt)
+4. [TODOs](#todos)
 ---
 
 ## Ús:
@@ -20,4 +20,4 @@ També pots descarregar-te tot el codi així:
 ---
 <a id = "todos"></a>
 ### TODOs
-*// TODO: Revisar powerpnt de M05-UF2 la ppt de dokka per afegir la captura del pas de les icones de recarregar l'arxiu build.gradle.kts*
+~~*// TODO: Revisar powerpnt de M05-UF2 la ppt de dokka per afegir la captura del pas de les icones de recarregar l'arxiu build.gradle.kts*~~
