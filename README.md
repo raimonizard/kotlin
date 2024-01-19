@@ -5,19 +5,15 @@
 ---
 ## Contingut:
 1. Llibreria [Utilities.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/Utilities.kt)
-3. Llibreria [ConsoleColors.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/ConsoleColors.kt)
-4. [TODOs](#todos)
+2. Llibreria [ConsoleColors.kt](https://github.com/raimonizard/kotlin/blob/main/src/main/kotlin/ConsoleColors.kt)
 ---
 
 ## Ús:
-Navega la carpetes del projecte i copia't els fitxers que t'interessin.
+Navega la carpetes del projecte i <kbd>copy</kbd> i <kbd>paste</kbd> els fitxers que t'interessin.
 
-També pots descarregar-te tot el codi així:
 
-![image](https://github.com/raimonizard/kotlin/assets/97727989/39687d98-faef-4257-b33f-f3b5748bd225)
+>[!NOTE]
+>També pots descarregar-te tot el codi així: ![image](https://github.com/raimonizard/kotlin/assets/97727989/39687d98-faef-4257-b33f-f3b5748bd225)
 
 
 ---
-<a id = "todos"></a>
-### TODOs
-~~*// TODO: Revisar powerpnt de M05-UF2 la ppt de dokka per afegir la captura del pas de les icones de recarregar l'arxiu build.gradle.kts*~~
