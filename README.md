@@ -3,8 +3,8 @@
 - **Data**: Desembre 2023
 
 ## Contingut:
-1. Llibreria [Utilities.kt](src/main/kotlin/Utilities.kt)
-2. Llibreria [ConsoleColors.kt](src/main/kotlin/ConsoleColors.kt)
+1. Llibreria [Utilities.kt](src/main/kotlin/utils/Utilities.kt)
+2. Llibreria [ConsoleColors.kt](src/main/kotlin/utils/ConsoleColors.kt)
 3. Exemple [retorn múltiple en una funció](src/main/kotlin/RetornMultiple.kt)
 4. Exemple [matriu de tipatge múltiple](src/main/kotlin/MatriuMultiValor.kt)
 
