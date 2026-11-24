@@ -1,3 +1,4 @@
+import org.example.utils.Utilities
 import java.util.Scanner
 
 val scan: Scanner = Scanner(System.`in`)
@@ -17,9 +18,9 @@ fun main(){
     var (nom, cognom, edat) = nomCognomEdat()
     println("El teu nom complet és: $nom, $cognom i tens $edat anys")
 
-    var assignatura1: String = "M2"
-    var assignatura2: String = "M3"
-    var notes = notes(assignatura1, assignatura2)
+    var assignatura1: String = Utilities.readWord("Escriu el nom de la primera assignatura", "El nom introduït no és vàlid")
+    var assignatura2: String = Utilities.readWord("Escriu el nom de la segona assignatura", "El nom introduït no és vàlid")
+    var notes: Pair<Float, Float> = notes(assignatura1, assignatura2)
     println("La teva nota de $assignatura1 és ${notes.first} i la teva nota de $assignatura2 és ${notes.second}")
 }
 
@@ -33,16 +34,13 @@ fun main(){
  * @constructor Crea una nova instància d'un Pair
  */
 fun notes(assignatura1: String
-          , assignatura2: String): Pair<Int, Int>{
-    var nota1: Int
-    var nota2: Int
+          , assignatura2: String): Pair<Float, Float>{
+    var nota1: Float
+    var nota2: Float
 
-    print("Escriu la teva nota de l'assignatura $assignatura1: ")
-    nota1 = scan.nextInt()
-    scan.nextLine()
+    nota1 = Utilities.readFloat("Escriu la nota de $assignatura1", "Valor no vàlid", "Valor fora de rang",1f, 10f)
 
-    print("Escriu la teva nota de l'assignatura $assignatura2: ")
-    nota2 = scan.nextInt()
+    nota2 = Utilities.readFloat("Escriu la nota de $assignatura2", "Valor no vàlid", "Valor fora de rang",1f, 10f)
     scan.nextLine()
 
     return Pair(nota1, nota2)
@@ -61,14 +59,11 @@ fun nomCognomEdat(): Triple<String, String, Int>{
     var cognom: String
     var edat: Int
 
-    print("Si us plau, escriu el teu nom: ")
-    nom = scan.nextLine()
+    nom = Utilities.readWord("Si us plau, escriu el teu nom", "Nom no vàlid")
 
-    print("Si us plau, escriu el teu cognom: ")
-    cognom = scan.nextLine()
+    cognom = Utilities.readWord("Si us plau, escriu el teu cognom", "Nom no vàlid")
 
-    print("Si us plau, escriu la teva edat: ")
-    edat = scan.nextInt()
+    edat = Utilities.readInt("Si us plau, escriu la teva edat", "Valor no vàlid", "Valor fora de rang",1, 99)
     scan.nextLine()
 
     return Triple(nom, cognom, edat)
